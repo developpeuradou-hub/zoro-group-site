@@ -48,7 +48,7 @@ export default async function BienPage({ params }: { params: Promise<{ id: strin
         </div>
 
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '32px 24px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: 28, alignItems: 'start' }}>
+          <div className='fiche-grid' style={{ display: 'grid', gridTemplateColumns: '1fr 340px', gap: 28, alignItems: 'start' }}>
 
             {/* Gauche */}
             <div>
@@ -98,7 +98,7 @@ export default async function BienPage({ params }: { params: Promise<{ id: strin
               {similaires && similaires.length > 0 && (
                 <div style={{ marginTop: 28 }}>
                   <h2 style={{ fontSize: 15, fontWeight: 600, color: '#1a1a1a', marginBottom: 14, fontFamily: 'Montserrat,sans-serif' }}>Biens similaires</h2>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+                  <div className='similaires-grid' style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
                     {similaires.map((s: any) => (
                       <Link key={s.id} href={`/catalogue/${s.id}`} style={{ textDecoration: 'none', background: 'white', border: '0.5px solid #e8e8e8', borderRadius: 8, overflow: 'hidden', display: 'block' }}>
                         <div style={{ height: 80, background: s.gradient, position: 'relative', overflow: 'hidden' }}>

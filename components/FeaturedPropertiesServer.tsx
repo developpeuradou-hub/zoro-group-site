@@ -27,7 +27,7 @@ export default async function FeaturedPropertiesServer() {
           </Link>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 16 }}>
+        <div className='grid-auto' style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 16 }}>
           {biens.map(b => (
             <div key={b.id} style={{ background: 'white', border: '0.5px solid #e8e8e8', borderRadius: 10, overflow: 'hidden', boxShadow: '0 1px 6px rgba(0,0,0,0.06)' }}>
               <div style={{ height: 130, background: b.gradient, position: 'relative', overflow: 'hidden' }}>

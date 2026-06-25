@@ -89,7 +89,7 @@ export default function AProposPage() {
 
             {/* Visuel équipe */}
             <BrandedImage
-              src="/images/equipe-chantier.jpg"
+              src="/images/generated/about-hero.jpg"
               alt="Équipe Zoro Group sur chantier"
               height={280}
               showBrand={true}

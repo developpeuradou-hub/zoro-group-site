@@ -56,7 +56,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Grille 4 cartes */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
+        <div className='grid-auto' style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
           {services.map((s, i) => (
             <div key={i} style={{ background: 'var(--color-background-primary)', border: '0.5px solid var(--color-border-tertiary)', borderRadius: 10, overflow: 'hidden', borderLeft: `3px solid ${s.accent}` }}>
               {/* Image */}
